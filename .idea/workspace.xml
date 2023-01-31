@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db1c354a-c263-4dce-8e80-77ac6c90ca23" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Matrices2021.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Matrices2023.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Matrices2023.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Matrices2023.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +20,9 @@
       </list>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1coweh4HNQYRPKHC0u9XKKTqwex" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -26,7 +32,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -34,7 +41,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in /Users/../*Algorithms &amp; Structures/*2020-2021 (CLA&amp;S)/04.Matrices/Matrices2021/Part1Test.py">
+  <component name="RunManager" selected="Python tests.Unittests for Part1Test.MyTestCase">
     <configuration name="Part1Runner" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Matrices2023" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -77,27 +84,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Part4Runner" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Matrices2023" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Part4Runner.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Part5Runner" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Matrices2023" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -119,6 +105,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests for Part1Test.MyTestCase" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Matrices2023" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Part1Test.MyTestCase&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unittests in /Users/../*Algorithms &amp; Structures/*2020-2021 (CLA&amp;S)/04.Matrices/Matrices2021/Part1Test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="Matrices2023" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -138,17 +138,17 @@
     <list>
       <item itemvalue="Python.Part1Runner" />
       <item itemvalue="Python.Part2Runner" />
-      <item itemvalue="Python.Part4Runner" />
       <item itemvalue="Python.Part5Runner" />
+      <item itemvalue="Python tests.Unittests for Part1Test.MyTestCase" />
       <item itemvalue="Python tests.Unittests in /Users/../*Algorithms &amp; Structures/*2020-2021 (CLA&amp;S)/04.Matrices/Matrices2021/Part1Test.py" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests for Part1Test.MyTestCase" />
         <item itemvalue="Python tests.Unittests in /Users/../*Algorithms &amp; Structures/*2020-2021 (CLA&amp;S)/04.Matrices/Matrices2021/Part1Test.py" />
         <item itemvalue="Python.Part2Runner" />
         <item itemvalue="Python.Part1Runner" />
         <item itemvalue="Python.Part5Runner" />
-        <item itemvalue="Python.Part4Runner" />
       </list>
     </recent_temporary>
   </component>
@@ -164,6 +164,18 @@
       <option name="presentableId" value="Default" />
       <updated>1591208350941</updated>
     </task>
+    <task id="LOCAL-00001" summary="Updated to 2023 and python 3.10 (I hope)">
+      <created>1675188359641</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675188359641</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Updated to 2023 and python 3.10 (I hope)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated to 2023 and python 3.10 (I hope)" />
   </component>
 </project>
