@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db1c354a-c263-4dce-8e80-77ac6c90ca23" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KinkaidDecorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/KinkaidDecorators.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Matrices.py" beforeDir="false" afterPath="$PROJECT_DIR$/Matrices.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +50,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for Part2Test.MyTestCase.test_2_transpose">
+  <component name="RunManager" selected="Python tests.Unittests for Part1Test.MyTestCase">
     <configuration name="Part1Runner" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Matrices2023" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -144,8 +146,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for Part2Test.MyTestCase.test_2_transpose" />
         <item itemvalue="Python tests.Unittests for Part1Test.MyTestCase" />
+        <item itemvalue="Python tests.Unittests for Part2Test.MyTestCase.test_2_transpose" />
         <item itemvalue="Python tests.Unittests in /Users/../*Algorithms &amp; Structures/*2020-2021 (CLA&amp;S)/04.Matrices/Matrices2021/Part1Test.py" />
         <item itemvalue="Python.Part2Runner" />
         <item itemvalue="Python.Part1Runner" />
@@ -192,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677607514520</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="activated logging at INFO level.">
+      <created>1677608064513</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677608064513</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -200,15 +209,21 @@
     <MESSAGE value="Updated to 2023 and python 3.10 (I hope) - part 2" />
     <MESSAGE value="Adding decoration to Matrices" />
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="activated logging at INFO level." />
+    <option name="LAST_COMMIT_MESSAGE" value="activated logging at INFO level." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/KinkaidDecorators.py</url>
+          <url>file://$PROJECT_DIR$/Part2Test.py</url>
           <line>8</line>
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Matrices.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

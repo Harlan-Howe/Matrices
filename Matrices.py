@@ -11,7 +11,6 @@ class Matrix:
     def __init__(self,A_in):
         self.mat = A_in
 
-    @log_start_stop_method
     def shape(self) -> (int,int):
         """
         returns a two-element tuple indicating the number of rows and the number of cols of Matrix A
@@ -75,7 +74,6 @@ class Matrix:
         assert N > 0 and M > 0, "N and M must be positive."
         return cls([[1 for col in range(M)] for row in range(N)])
 
-
     @classmethod #this means that this is a static "factory" constructor. You say z = Matrix.identity((5,5)), rather than z.identity((5,5))
     def identity(cls,N:int)-> 'Matrix': #note single quotes because this is the class, itself and has not been completely defined yet.
         """
@@ -91,7 +89,7 @@ class Matrix:
 
 
 
-        return Matrix([["Not yet written"]])  # remove this when you add your code.
+        return Matrix([["identity not yet written"]])  # remove this when you add your code.
         # -------------------------------------------------------
 
     # ********************************************************************
@@ -109,7 +107,7 @@ class Matrix:
         #  Hint: create a matrix of a given size, using one of the methods above, and then update it.
 
 
-        return Matrix([["Not yet written"]])  # remove this when you add your code.
+        return Matrix([["Transpose not yet written"]])  # remove this when you add your code.
         # -------------------------------------------------------
 
     # ********************************************************************
@@ -127,7 +125,7 @@ class Matrix:
         # TODO: You write this one.
         # Remember, you need to create a new matrix to put the results
 
-        return Matrix([["Not yet written"]])  # remove this when you add your code.
+        return Matrix([["Add not yet written"]])  # remove this when you add your code.
         # -------------------------------------------------------
 
     def times(self, n) -> 'Matrix':
@@ -148,7 +146,7 @@ class Matrix:
         # -------------------------------------------------------
         # TODO: You write this one.
 
-        return Matrix([["Not yet written"]])  # remove this when you add your code.
+        return Matrix([["Times not yet written"]])  # remove this when you add your code.
         # -------------------------------------------------------
 
     def matrix_multiply(self, B:'Matrix')->'Matrix':
@@ -169,7 +167,7 @@ class Matrix:
 
 
 
-        return Matrix([["Not yet written"]])  # remove this when you add your code.
+        return Matrix([["Matrix Multiply not yet written"]])  # remove this when you add your code.
         # -------------------------------------------------------
 
     #already finished....
@@ -297,5 +295,5 @@ class Matrix:
         # 3) The inverse is the transpose of the minor matrix, divided by the determinant. Make sure that the determinant
         #    isn't zero!
 
-        return Matrix([["Not yet written"]])  # remove this when you add your code.
+        return Matrix([["Inverse not yet written"]])  # remove this when you add your code.
         # -------------------------------------------------------
