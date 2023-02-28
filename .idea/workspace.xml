@@ -7,7 +7,6 @@
     <list default="true" id="db1c354a-c263-4dce-8e80-77ac6c90ca23" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KinkaidDecorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/KinkaidDecorators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Matrices.py" beforeDir="false" afterPath="$PROJECT_DIR$/Matrices.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +200,28 @@
       <option name="project" value="LOCAL" />
       <updated>1677608064513</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Updated &quot;not yet written&quot; placeholders to indicate _what_ wasn't written yet.">
+      <created>1677618575756</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1677618575756</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added logger decorator to all non-classmethod, student-TODO methods.&#10;Refactored num_R and num_C to num_r and num_c in several places.">
+      <created>1677618832092</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1677618832092</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added logger decorator to all non-class, student-">
+      <created>1677618854231</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1677618854231</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -210,7 +230,11 @@
     <MESSAGE value="Adding decoration to Matrices" />
     <MESSAGE value="initial commit" />
     <MESSAGE value="activated logging at INFO level." />
-    <option name="LAST_COMMIT_MESSAGE" value="activated logging at INFO level." />
+    <MESSAGE value="Updated &quot;not yet written&quot; placeholders to indicate _what_ wasn't written yet." />
+    <MESSAGE value="Added logger decorator to all non-classmethod, student-TODO methods.&#10;Refactored num_R and num_C to num_r and num_c in several places." />
+    <MESSAGE value="Added logger decorator to all non-class, student-" />
+    <MESSAGE value="Correction to previous commit... added functools.wraps." />
+    <option name="LAST_COMMIT_MESSAGE" value="Correction to previous commit... added functools.wraps." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
