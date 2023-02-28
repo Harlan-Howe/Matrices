@@ -114,6 +114,7 @@ class Matrix:
     #        PART 3 (Still in the Matrix class)
     # ********************************************************************
 
+    @log_start_stop_method
     def add(self, B: 'Matrix') -> 'Matrix':
         """
         creates a new matrix that is the sum of matrices self and B. self and B must have the same shape.
@@ -128,6 +129,7 @@ class Matrix:
         return Matrix([["Add not yet written"]])  # remove this when you add your code.
         # -------------------------------------------------------
 
+    @log_start_stop_method
     def times(self, n) -> 'Matrix':
         """
         If n is a scalar, creates a new matrix that is the scalar multiple n·self
@@ -142,6 +144,7 @@ class Matrix:
         else:
             return None
 
+    @log_start_stop_method
     def scalar_times(self,n:float) -> 'Matrix':
         # -------------------------------------------------------
         # TODO: You write this one.
@@ -149,6 +152,7 @@ class Matrix:
         return Matrix([["Times not yet written"]])  # remove this when you add your code.
         # -------------------------------------------------------
 
+    @log_start_stop_method
     def matrix_multiply(self, B:'Matrix')->'Matrix':
         """
         performs the matrix multiplication of two matrices
@@ -232,35 +236,36 @@ class Matrix:
     #        PART 4 (Still in the Matrix class)
     # ********************************************************************
     # already written
-    def get_minor(self, r:int, c:int) -> 'Matrix':
+    def get_minor(self, r: int, c: int) -> 'Matrix':
         """
         returns a smaller array, composed of matrix A, less the given row and column.
-        \:param r: number row to remove. r < N
+        :param r: number row to remove. r < N
         :param c: number col to remove. c < M
         :return: a array ((N-1) x (M-1)) array
         """
-        num_R, num_C = self.shape()
-        assert r > -1 and r < num_R and c > -1 and c < num_C, f"Attempting to remove row {r} and col {c} from matrix of shape {self.shape()}."
+        num_r, num_c = self.shape()
+        assert r > -1 and r < num_r and c > -1 and c < num_c, f"Attempting to remove row {r} and col {c} from matrix of shape {self.shape()}."
         rows = []
-        for i in range(num_R):
+        for i in range(num_r):
             if i == r:
                 continue
             this_row = []
-            for j in range(num_C):
+            for j in range(num_c):
                 if j == c:
                     continue
                 this_row.append(self.mat[i][j])
             rows.append(this_row)
         return Matrix(rows)
 
+    @log_start_stop_method
     def determinant(self) -> float:
         """
         calculates the determinant of a square matrix
         :param A: a (N x N) matrix
         :return: a scalar
         """
-        num_R, num_C = self.shape()
-        assert num_R == num_C, f"Determinant must be for a square matrix; this one is {self.shape()}."
+        num_r, num_c = self.shape()
+        assert num_r == num_c, f"Determinant must be for a square matrix; this one is {self.shape()}."
         # -------------------------------------------------------
         # TODO: You write this one.
         # Note: this one should be recursive.... make use of the get_minor method immediately above this one!
@@ -274,14 +279,15 @@ class Matrix:
     # ********************************************************************
     #        PART 5 (Still in the Matrix class)
     # ********************************************************************
+    @log_start_stop_method
     def inverse(self) -> 'Matrix':
         """
         calculates the inverse of the given square matrix
         :param A: an (N x N) matrix
         :return: a new (N x N) matrix that is the inverse of A, or None, if there is no inverse.
         """
-        num_R, num_C = self.shape()
-        assert num_R == num_C, f"Must be a square matrix. This one is {self.shape()}."
+        num_r, num_c = self.shape()
+        assert num_r == num_c, f"Must be a square matrix. This one is {self.shape()}."
         # -------------------------------------------------------
         # TODO: You write this one.
 
