@@ -2,11 +2,13 @@
 # ********************************************************************
 #        PART 1
 # ********************************************************************
+from KinkaidDecorators import log_start_stop_method
 
 class Matrix:
     def __init__(self,A_in):
         self.mat = A_in
 
+    @log_start_stop_method
     def shape(self) -> (int,int):
         """
         returns a two-element tuple indicating the number of rows and the number of cols of Matrix A
@@ -70,6 +72,7 @@ class Matrix:
         assert N > 0 and M > 0, "N and M must be positive."
         return cls([[1 for col in range(M)] for row in range(N)])
 
+
     @classmethod #this means that this is a static "factory" constructor. You say z = Matrix.identity((5,5)), rather than z.identity((5,5))
     def identity(cls,N:int)-> 'Matrix': #note single quotes because this is the class, itself and has not been completely defined yet.
         """
@@ -92,6 +95,7 @@ class Matrix:
     #        PART 2 (Still in the Matrix class)
     # ********************************************************************
 
+    @log_start_stop_method
     def transpose(self) -> 'Matrix' :
         """
         creates a new matrix that is A "flipped" on the diagonal axis.
