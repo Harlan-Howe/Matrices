@@ -1,8 +1,11 @@
+import logging
 
 # ********************************************************************
 #        PART 1
 # ********************************************************************
 from KinkaidDecorators import log_start_stop_method
+
+logging.basicConfig(level=logging.INFO)
 
 class Matrix:
     def __init__(self,A_in):
