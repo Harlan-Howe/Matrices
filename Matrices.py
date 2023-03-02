@@ -5,10 +5,12 @@ import logging
 # ********************************************************************
 from KinkaidDecorators import log_start_stop_method
 
-logging.basicConfig(level=logging.INFO)
+# logging.basicConfig(level=logging.INFO) # simple version to the output console
+logging.basicConfig(level=logging.DEBUG, filename="log.txt", format="%(asctime)s %(levelname)s %(message)s",
+                    datefmt="%b %e, %Y @ %H:%M:%S %p --- ") # more robust, sent to a file called log.txt in your project
 
 class Matrix:
-    def __init__(self,A_in):
+    def __init__(self, A_in):
         self.mat = A_in
 
     def shape(self) -> (int,int):
@@ -105,7 +107,7 @@ class Matrix:
         # -------------------------------------------------------
         # TODO: You write this one.
         #  Hint: create a matrix of a given size, using one of the methods above, and then update it.
-
+        logging.debug("Doing the transpose.... (an example debug message.")
 
         return Matrix([["Transpose not yet written"]])  # remove this when you add your code.
         # -------------------------------------------------------
@@ -291,7 +293,8 @@ class Matrix:
         # -------------------------------------------------------
         # TODO: You write this one.
 
-        # 1) Construct the minor_matrix. Feel free to make this a separate method.
+        # 1) Construct the minor_matrix. (Remember, this is different than just the minor.)
+        # Feel free to make this a separate method and call it from here.
         
 
         # 2) Calculate the determinant, either by calling the determinant() method or by using the minor_matrix (faster)
