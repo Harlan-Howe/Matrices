@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="db1c354a-c263-4dce-8e80-77ac6c90ca23" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KinkaidDecorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/KinkaidDecorators.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Matrices.py" beforeDir="false" afterPath="$PROJECT_DIR$/Matrices.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,6 +27,8 @@
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -38,19 +39,20 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "decorated",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for Part2Test.MyTestCase.test_2_transpose">
+  <component name="RunManager" selected="Python tests.Unittests in Part4Test.py">
     <configuration name="Part2Runner" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Matrices2023" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -139,9 +141,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for Part2Test.MyTestCase.test_2_transpose" />
         <item itemvalue="Python tests.Unittests in Part4Test.py" />
         <item itemvalue="Python tests.Unittests for Part1Test.MyTestCase" />
+        <item itemvalue="Python tests.Unittests for Part2Test.MyTestCase.test_2_transpose" />
         <item itemvalue="Python tests.Unittests in /Users/../*Algorithms &amp; Structures/*2020-2021 (CLA&amp;S)/04.Matrices/Matrices2021/Part1Test.py" />
         <item itemvalue="Python.Part2Runner" />
       </list>
@@ -224,6 +226,17 @@
     </task>
     <option name="localTasksCounter" value="10" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated to 2023 and python 3.10 (I hope)" />

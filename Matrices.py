@@ -295,6 +295,8 @@ class Matrix:
 
         # 1) Construct the minor_matrix. (Remember, this is different than just the minor.)
         # Feel free to make this a separate method and call it from here.
+        # You can test whether you are doing this correctly by going to wolframalpha.com and typing in something akin to
+        #       minor matrix of [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
         
 
         # 2) Calculate the determinant, either by calling the determinant() method or by using the minor_matrix (faster)
