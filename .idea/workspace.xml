@@ -119,7 +119,6 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.10/bin/python3.10" />
-      <option name="SDK_NAME" value="Python 3.10 (2)" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -132,9 +131,9 @@
     </configuration>
     <list>
       <item itemvalue="Python.Part2Runner" />
+      <item itemvalue="Python tests.Unittests for Part1Test.MyTestCase" />
       <item itemvalue="Python tests.Unittests for Part2Test.MyTestCase.test_2_transpose" />
       <item itemvalue="Python tests.Unittests in Part4Test.py" />
-      <item itemvalue="Python tests.Unittests for Part1Test.MyTestCase" />
       <item itemvalue="Python tests.Unittests in /Users/../*Algorithms &amp; Structures/*2020-2021 (CLA&amp;S)/04.Matrices/Matrices2021/Part1Test.py" />
     </list>
     <recent_temporary>
