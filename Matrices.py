@@ -1,4 +1,5 @@
 import logging
+from typing import List
 
 # ********************************************************************
 #        PART 1
@@ -10,7 +11,7 @@ logging.basicConfig(level=logging.DEBUG, filename="log.txt", format="%(asctime)s
                     datefmt="%b %e, %Y @ %H:%M:%S %p --- ") # more robust, sent to a file called log.txt in your project
 
 class Matrix:
-    def __init__(self, A_in):
+    def __init__(self, A_in: List[List]):
         self.mat = A_in
 
     def shape(self) -> (int,int):
@@ -21,7 +22,7 @@ class Matrix:
         """
         return (len(self.mat), len(self.mat[0]))
 
-    def display(self, message=""):
+    def display(self, message: str = ""):
         """
         a quick printing routine that puts a dividing line before and after the matrix, along with an optional title.
         :param message:
@@ -230,9 +231,9 @@ class Matrix:
             return self.transpose().cross(B.transpose())
         assert self.shape()[1] > 2, f"self must be at least 3 in one direction. This is {self.shape()}"
 
-        return Matrix(((self.mat[0][1] * B.mat[0][2] - self.mat[0][2] * B.mat[0][1],
+        return Matrix([[self.mat[0][1] * B.mat[0][2] - self.mat[0][2] * B.mat[0][1],
                 self.mat[0][2] * B.mat[0][0] - self.mat[0][0] * B.mat[0][2],
-                self.mat[0][0] * B.mat[0][1] - self.mat[0][1] * B.mat[0][0]),))
+                self.mat[0][0] * B.mat[0][1] - self.mat[0][1] * B.mat[0][0]],])
 
     # ********************************************************************
     #        PART 4 (Still in the Matrix class)
