@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db1c354a-c263-4dce-8e80-77ac6c90ca23" name="Default Changelist" comment="Style cleanup">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="db1c354a-c263-4dce-8e80-77ac6c90ca23" name="Default Changelist" comment="should work for python 3.11...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Matrices.py" beforeDir="false" afterPath="$PROJECT_DIR$/Matrices.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +44,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python tests.Unittests for Part2Test.MyTestCase.test_2_transpose.executor": "Run",
-    "Python.Matrices.executor": "Run",
+    "Python.Matrices.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -264,7 +264,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710779910472</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="should work for python 3.11...">
+      <option name="closed" value="true" />
+      <created>1710779935867</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1710779935867</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -281,7 +289,8 @@
     <MESSAGE value="Updated interpreter to 3.11 on my machine... YMMV." />
     <MESSAGE value="Slight updates to type hints in Matrices.py" />
     <MESSAGE value="Style cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Style cleanup" />
+    <MESSAGE value="should work for python 3.11..." />
+    <option name="LAST_COMMIT_MESSAGE" value="should work for python 3.11..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -290,6 +299,11 @@
           <url>file://$PROJECT_DIR$/Part2Test.py</url>
           <line>8</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Matrices.py</url>
+          <line>218</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

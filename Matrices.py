@@ -143,7 +143,8 @@ class Matrix:
         If n is a scalar, creates a new matrix that is the scalar multiple n·self
         otherwise, if n is a Matrix, performs the dot product of self.dot(n).
         :param n: a scalar number or a matrix.
-        :return: a new (N x M) matrix, where (N x M) is the shape of this matrix.
+        :return: either a new (N x M) matrix, where (N x M) is the shape of this matrix (if scalar) OR
+        a new (N x P) matrix representing the dot product self·n if self is (N x M) and n is (M x P).
         """
         if type(n) is int or type(n) is float:
             return self.scalar_times(n)
@@ -154,6 +155,11 @@ class Matrix:
 
     @log_start_stop_method
     def scalar_times(self, n: float) -> 'Matrix':
+        """
+        creates a new matrix that is the scalar multiple of n·self.
+        :param n: the scalar multiple
+        :return: a new (N x M) matrix, where (N x M) is the shape of this matrix.
+        """
         # -------------------------------------------------------
         # TODO: You write this one.
 
@@ -163,10 +169,10 @@ class Matrix:
     @log_start_stop_method
     def matrix_multiply(self, B: 'Matrix') -> 'Matrix':
         """
-        performs the matrix multiplication of two matrices
+        performs the matrix multiplication of two matrices (not to be confused with the cell-wise multiplication)
         precondition: self is a (N x M) matrix
         :param B: a (M x P) matrix
-        :return: a new (N x P) matrix representing the dot product self·B
+        :return: a new (N x P) matrix representing the matrix product self·B
         """
         # -------------------------------------------------------
         # TODO: You write this one.
@@ -174,6 +180,9 @@ class Matrix:
         # write an assertion like the one in add() to make sure this is a viable multiplication.
 
         # now do the multiplication.
+
+        # (Note: don't just call the dot product, because it is calling this method and you'll get runaway mutual
+        # recursion.)
 
         return Matrix([["Matrix Multiply not yet written"]])  # remove this when you add your code.
         # -------------------------------------------------------
@@ -214,10 +223,16 @@ class Matrix:
         assert B_rows == 1 or B_cols == 1, f"Dot attempted, but B is size {B.shape()}."
 
         if A_rows > 1:
-            return self.transpose().dot(B.transpose())
-        assert A_cols == B_cols, (f"Dot attempted, but self and B incompatible: self is shape {self.shape()} "
-                                  f"and B is shape {B.shape()}.")
-        return self.matrix_multiply(B.transpose()).mat[0][0]
+            return self.transpose().dot(B)
+        if B_cols > 1:
+            assert A_cols == B_cols, (f"Dot attempted, but self and B incompatible: self is shape {self.shape()} "
+                                      f"and B is shape {B.shape()}.")
+            return self.matrix_multiply(B.transpose()).mat[0][0]
+        else:
+            assert A_cols == B_rows, (f"Dot attempted, but self and B incompatible: self is shape {self.shape()} "
+                                      f"and B is shape {B.shape()}.")
+            return self.matrix_multiply(B).mat[0][0]
+
 
     # already finished....
     def cross_product(self, B: 'Matrix') -> 'Matrix':
@@ -305,3 +320,4 @@ class Matrix:
 
         return Matrix([["Inverse not yet written"]])  # remove this when you add your code.
         # -------------------------------------------------------
+
