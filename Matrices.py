@@ -209,7 +209,7 @@ class Matrix:
         return True
 
     # already finished....
-    def dot(self, B: 'Matrix') -> 'Matrix':
+    def dot(self, B: 'Matrix') -> int:
         """
         performs the dot product of two matrices that are (N x 1) or (1 x N)
         :param B: A matrix of the same shape as A or A^T
