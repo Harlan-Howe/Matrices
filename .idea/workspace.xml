@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db1c354a-c263-4dce-8e80-77ac6c90ca23" name="Default Changelist" comment="should work for python 3.11...">
+    <list default="true" id="db1c354a-c263-4dce-8e80-77ac6c90ca23" name="Default Changelist" comment="refinements to the matrix multiply documentation; revisited the dot product method... should work better.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Matrices.py" beforeDir="false" afterPath="$PROJECT_DIR$/Matrices.py" afterDir="false" />
     </list>
@@ -43,8 +43,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Unittests for Part1Test.MyTestCase.executor": "Run",
+    "Python tests.Unittests for Part2Test.MyTestCase.executor": "Run",
     "Python tests.Unittests for Part2Test.MyTestCase.test_2_transpose.executor": "Run",
     "Python.Matrices.executor": "Debug",
+    "Python.Part2Runner.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -57,7 +60,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python tests.Unittests for Part2Test.MyTestCase">
     <configuration name="Part2Runner" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Matrices2023" />
       <option name="ENV_FILES" value="" />
@@ -95,6 +98,21 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests for Part2Test.MyTestCase" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Matrices2023" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Part2Test.MyTestCase&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unittests for Part2Test.MyTestCase.test_2_transpose" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="Matrices2023" />
       <option name="ENV_FILES" value="" />
@@ -125,36 +143,20 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in /Users/../*Algorithms &amp; Structures/*2020-2021 (CLA&amp;S)/04.Matrices/Matrices2021/Part1Test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="Matrices2023" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.10/bin/python3.10" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_pattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/../../../../*Algorithms \u0026 Structures/*2020-2021 (CLA\u0026S)/04.Matrices/Matrices2021/Part1Test.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.Part2Runner" />
+      <item itemvalue="Python tests.Unittests for Part2Test.MyTestCase" />
       <item itemvalue="Python tests.Unittests for Part1Test.MyTestCase" />
       <item itemvalue="Python tests.Unittests for Part2Test.MyTestCase.test_2_transpose" />
       <item itemvalue="Python tests.Unittests in Part4Test.py" />
-      <item itemvalue="Python tests.Unittests in /Users/../*Algorithms &amp; Structures/*2020-2021 (CLA&amp;S)/04.Matrices/Matrices2021/Part1Test.py" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests for Part2Test.MyTestCase" />
+        <item itemvalue="Python tests.Unittests for Part1Test.MyTestCase" />
+        <item itemvalue="Python.Part2Runner" />
         <item itemvalue="Python tests.Unittests for Part2Test.MyTestCase.test_2_transpose" />
         <item itemvalue="Python tests.Unittests in Part4Test.py" />
-        <item itemvalue="Python tests.Unittests for Part1Test.MyTestCase" />
-        <item itemvalue="Python tests.Unittests in /Users/../*Algorithms &amp; Structures/*2020-2021 (CLA&amp;S)/04.Matrices/Matrices2021/Part1Test.py" />
-        <item itemvalue="Python.Part2Runner" />
       </list>
     </recent_temporary>
   </component>
@@ -272,7 +274,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710779935867</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="refinements to the matrix multiply documentation; revisited the dot product method... should work better.">
+      <option name="closed" value="true" />
+      <created>1710781628266</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1710781628266</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -290,7 +300,8 @@
     <MESSAGE value="Slight updates to type hints in Matrices.py" />
     <MESSAGE value="Style cleanup" />
     <MESSAGE value="should work for python 3.11..." />
-    <option name="LAST_COMMIT_MESSAGE" value="should work for python 3.11..." />
+    <MESSAGE value="refinements to the matrix multiply documentation; revisited the dot product method... should work better." />
+    <option name="LAST_COMMIT_MESSAGE" value="refinements to the matrix multiply documentation; revisited the dot product method... should work better." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

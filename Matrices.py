@@ -219,19 +219,14 @@ class Matrix:
         A_rows, A_cols = self.shape()
         B_rows, B_cols = B.shape()
 
+        assert A_rows == B_rows and A_cols == B_cols, f"Dot attempted, but A is size {self.shape()} and B is size {B.shape()}."
         assert A_rows == 1 or A_cols == 1, f"Dot attempted, but self is size {self.shape()}."
-        assert B_rows == 1 or B_cols == 1, f"Dot attempted, but B is size {B.shape()}."
 
         if A_rows > 1:
-            return self.transpose().dot(B)
-        if B_cols > 1:
-            assert A_cols == B_cols, (f"Dot attempted, but self and B incompatible: self is shape {self.shape()} "
-                                      f"and B is shape {B.shape()}.")
-            return self.matrix_multiply(B.transpose()).mat[0][0]
-        else:
-            assert A_cols == B_rows, (f"Dot attempted, but self and B incompatible: self is shape {self.shape()} "
-                                      f"and B is shape {B.shape()}.")
-            return self.matrix_multiply(B).mat[0][0]
+            return self.transpose().matrix_multiply(B).mat[0][0]
+
+        return self.matrix_multiply(B.transpose()).mat[0][0]
+
 
 
     # already finished....
