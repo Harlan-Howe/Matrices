@@ -40,10 +40,10 @@ class MyTestCase(unittest.TestCase):
             mat_C.times(mat_A)
 
     def test_7_dot(self):
-        self.assertEquals(51,mat_D.dot(mat_E),f"D•E should be 51. You got {mat_D.dot(mat_E)}")
+        self.assertEqual(51,mat_D.dot(mat_E),f"D•E should be 51. You got {mat_D.dot(mat_E)}")
         with self.assertRaises(AssertionError):
             mat_D.dot(mat_E.transpose())
-        self.assertEquals(49,mat_F.dot(mat_G),f"F•G should be 49. You got {mat_F.dot(mat_G)}")
+        self.assertEqual(49,mat_F.dot(mat_G),f"F•G should be 49. You got {mat_F.dot(mat_G)}")
 
     def test_8_cross(self):
         self.assertTrue(mat_H.equals(mat_F.cross_product(mat_G)), f"F x G should be H. You got {mat_F.cross_product(mat_G)}")

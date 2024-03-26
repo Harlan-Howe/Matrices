@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db1c354a-c263-4dce-8e80-77ac6c90ca23" name="Default Changelist" comment="refinements to the matrix multiply documentation; revisited the dot product method... should work better.">
+    <list default="true" id="db1c354a-c263-4dce-8e80-77ac6c90ca23" name="Default Changelist" comment="fixed return value of dot product.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Matrices.py" beforeDir="false" afterPath="$PROJECT_DIR$/Matrices.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part3Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Part3Test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,20 +41,20 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Unittests for Part1Test.MyTestCase.executor": "Run",
-    "Python tests.Unittests for Part2Test.MyTestCase.executor": "Run",
-    "Python tests.Unittests for Part2Test.MyTestCase.test_2_transpose.executor": "Run",
-    "Python.Matrices.executor": "Debug",
-    "Python.Part2Runner.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/harlan.howe/PycharmProjects/Matrices",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Unittests for Part1Test.MyTestCase.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Unittests for Part2Test.MyTestCase.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Unittests for Part2Test.MyTestCase.test_2_transpose.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Matrices.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.Part2Runner.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/harlan.howe/PycharmProjects/Matrices&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -282,7 +282,23 @@
       <option name="project" value="LOCAL" />
       <updated>1710781628266</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Re-fixed dot product, per Travis Ainsworth">
+      <option name="closed" value="true" />
+      <created>1711380410629</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1711380410629</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fixed return value of dot product.">
+      <option name="closed" value="true" />
+      <created>1711380661456</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1711380661456</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -301,7 +317,9 @@
     <MESSAGE value="Style cleanup" />
     <MESSAGE value="should work for python 3.11..." />
     <MESSAGE value="refinements to the matrix multiply documentation; revisited the dot product method... should work better." />
-    <option name="LAST_COMMIT_MESSAGE" value="refinements to the matrix multiply documentation; revisited the dot product method... should work better." />
+    <MESSAGE value="Re-fixed dot product, per Travis Ainsworth" />
+    <MESSAGE value="fixed return value of dot product." />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed return value of dot product." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -310,11 +328,6 @@
           <url>file://$PROJECT_DIR$/Part2Test.py</url>
           <line>8</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Matrices.py</url>
-          <line>218</line>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
