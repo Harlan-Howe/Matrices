@@ -310,7 +310,7 @@ class Matrix:
 
         # 2) Calculate the determinant, either by calling the determinant() method or by using the minor_matrix (faster)
 
-        # 3) The inverse is the transpose of the minor matrix, divided by the determinant. Make sure that the
+        # 3) The inverse is the transpose of the minor matrix, times the signs matrx, divided by the determinant. Make sure that the
         #    determinant isn't zero!
 
         return Matrix([["Inverse not yet written"]])  # remove this when you add your code.
